@@ -1,0 +1,138 @@
+[
+  {
+    "id": 101,
+    "user": "r.aurelian",
+    "ts": "2026-09-25 09:00",
+    "kind": "listed",
+    "text": "Proud of what this team is shipping this quarter. Keep building. Rania (ADI-0001) signing off ✌️",
+    "image": null,
+    "note": "false-loot: ADI-0001 looks like a staff ID but is a decoy"
+  },
+  {
+    "id": 102,
+    "user": "sam.eats",
+    "ts": "2026-09-25 12:40",
+    "kind": "listed",
+    "text": "third shawarma of the week and it is only wednesday. no notes, no regrets 🌯",
+    "image": "food-1.jpg"
+  },
+  {
+    "id": 104,
+    "user": "a.nocari",
+    "ts": "2026-09-26 23:58",
+    "kind": "listed",
+    "text": "first week as a server architect intern and i already shipped the staff portal during the SSO cutover to hit a deadline 😅 it is fine. it is fine, right?",
+    "image": null
+  },
+  {
+    "id": 105,
+    "user": "lina.trails",
+    "ts": "2026-09-27 07:30",
+    "kind": "listed",
+    "text": "sunrise over the hills before standup. this is the only standup i respect ⛰️",
+    "image": "scenery-1.jpg"
+  },
+  {
+    "id": 107,
+    "user": "theo.b",
+    "ts": "2026-09-27 12:30",
+    "kind": "listed",
+    "text": "whoever skipped the auth gate on the staff portal during the cutover owes the whole team a weekend. you know who you are.",
+    "image": null
+  },
+  {
+    "id": 108,
+    "user": "a.nocari",
+    "ts": "2026-09-27 12:41",
+    "kind": "listed",
+    "text": "@theo.b i SAID i am fixing it 😭 please stop posting about it, Marwan follows this feed",
+    "image": null
+  },
+  {
+    "id": 109,
+    "user": "theo.b",
+    "ts": "2026-09-27 12:55",
+    "kind": "listed",
+    "text": "@a.nocari then take down your little confession posts maybe? the tuesday one is still up btw 👀 i can literally still open it",
+    "image": null
+  },
+  {
+    "id": 110,
+    "user": "a.nocari",
+    "ts": "2026-09-27 13:02",
+    "kind": "listed",
+    "text": "i DID take it down!! ...ok it is just not on my profile anymore. that counts. nobody has the link anyway",
+    "image": null
+  },
+  {
+    "id": 112,
+    "user": "omar.gym",
+    "ts": "2026-09-28 06:11",
+    "kind": "listed",
+    "text": "6am leg day done. also found this taped under a desk, no idea what it means: aGV5IG5pY2UgdHJ5LCB0aGlzIGlzIGp1c3QgYSBneW0gc2VsZmllIGNhcHRpb24g8J+SqiB3cm9uZyBjbHVl",
+    "image": "gym-1.jpg",
+    "note": "troll base64 -> decodes to a taunt, not loot"
+  },
+  {
+    "id": 114,
+    "user": "a.nocari",
+    "ts": "2026-09-28 20:30",
+    "kind": "listed",
+    "text": "@mira.design you exported the Hack Day poster with the notes layer still in it again 💀 the setup code is literally sitting inside the file if anyone opens it. can you re-export PLEASE",
+    "image": null
+  },
+  {
+    "id": 115,
+    "user": "mira.design",
+    "ts": "2026-09-28 20:45",
+    "kind": "listed",
+    "text": "Hack Day posters are live! made a few versions, pick your favourite 🎉 (ignore aya she is dramatic)",
+    "image": "launch-poster.svg",
+    "extra_images": ["welcome-poster.svg", "hackday-badge.svg"]
+  },
+  {
+    "id": 116,
+    "user": "theo.b",
+    "ts": "2026-09-28 21:10",
+    "kind": "listed",
+    "text": "back in my day the portal lived at /employee-dashboard and life was simpler. you kids and your migrations.",
+    "image": null,
+    "note": "false-loot: /employee-dashboard is a decoy portal path"
+  },
+  {
+    "id": 118,
+    "user": "val.finance",
+    "ts": "2026-09-29 08:00",
+    "kind": "listed",
+    "text": "Q3 close is done. numbers are clean. that is the whole update. do not ask me more.",
+    "image": null
+  },
+  {
+    "id": 103,
+    "user": "a.nocari",
+    "ts": "2026-09-26 18:20",
+    "kind": "deleted_troll",
+    "text": "lol no. this one is actually deleted. imagine keeping receipts of your own crimes 😌 keep digging though"
+  },
+  {
+    "id": 106,
+    "user": "a.nocari",
+    "ts": "2026-09-27 02:14",
+    "kind": "hidden_real",
+    "text": "logging this before i forget and before Marwan sees. the __CODENAME__ migration moved the staff portal off the main nav so nobody stumbles onto it. i dumped the migration notes + the old config into the public resources folder so i do not lose them. i will clean the /resources folder later. do NOT share this. - aya"
+  },
+  {
+    "id": 111,
+    "user": "a.nocari",
+    "ts": "2026-09-27 19:50",
+    "kind": "deleted_troll",
+    "text": "nice try detective 🕵️ this post was removed by a moderator (me). nothing here but your own disappointment"
+  },
+  {
+    "id": 113,
+    "user": "a.nocari",
+    "ts": "2026-09-28 11:03",
+    "kind": "deleted_troll",
+    "text": "[post removed] you really typed the number in the address bar huh. respect. still nothing here though 🙂"
+  }
+]

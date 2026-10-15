@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% from "_post.html" import render_post %}
+{% block title %}Home · {{ SITE_NAME }}{% endblock %}
+{% block content %}
+  <div class="panel">
+    <div class="compose">
+      {{ avatar('You', '2563eb') }}
+      <div style="flex:1">
+        <textarea rows="1" placeholder="What's happening at {{ COMPANY }}?" data-compose></textarea>
+        <div class="row">
+          <span class="hint" data-count>Read-only during audit</span>
+          <button type="button" disabled>Post</button>
+        </div>
+      </div>
+    </div>
+    {% for p in posts %}
+      {{ render_post(p) }}
+    {% endfor %}
+  </div>
+{% endblock %}
