@@ -8,8 +8,8 @@
 services:
   portal:
     build: .
-    image: hackapi/firewall-1-web:1.0
-    container_name: firewall-1-web
+    image: hackapi/firewall-2-web:1.0
+    container_name: firewall-2-web
     ports:
       - "80:8080"            # host 80  ->  container 8080 (non-root)
     environment:
