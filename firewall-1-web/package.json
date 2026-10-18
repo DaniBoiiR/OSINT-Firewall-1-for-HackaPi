@@ -1,0 +1,12 @@
+{
+  "name": "adi-portal-css",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build-time Tailwind CSS pipeline for the Aurelian Dynamics portal. Not required at runtime; the compiled stylesheet is committed to static/css/app.css.",
+  "scripts": {
+    "build:css": "tailwindcss -c ./tailwind/tailwind.config.js -i ./tailwind/input.css -o ./static/css/app.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}

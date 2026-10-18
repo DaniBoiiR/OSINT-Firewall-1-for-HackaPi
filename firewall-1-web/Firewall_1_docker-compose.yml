@@ -1,0 +1,47 @@
+# Single-command deploy:   docker compose up -d --build
+# Participants reach it at: http://<host-ip>/        (host port 80)
+#
+# Rotate the flag without rebuilding: put FLAG=... in a .env file next to this
+# file (see .env.example), then `docker compose up -d`. An unset/empty FLAG
+# falls back to the in-app default.
+
+services:
+  portal:
+    build: .
+    image: hackapi/firewall-1-web:1.0
+    container_name: firewall-1-web
+    ports:
+      - "80:8080"            # host 80  ->  container 8080 (non-root)
+    environment:
+      - FLAG=${FLAG:-}       # empty -> app default; brace-safe (no default here)
+      - GUNICORN_BIND=0.0.0.0:8080
+      - GUNICORN_WORKERS=4
+      - GUNICORN_THREADS=4
+    restart: unless-stopped
+
+    # --- Container hardening ------------------------------------------------
+    # The app is deliberately vulnerable at the WEB layer (that is the point of
+    # the challenge). These controls keep those intended web bugs from turning
+    # into host/network compromise on the shared lab network.
+    read_only: true          # immutable root filesystem
+    tmpfs:
+      - /tmp                  # the only writable path the process needs
+    cap_drop:
+      - ALL                   # drop every Linux capability
+    security_opt:
+      - no-new-privileges:true
+    # Optional belt-and-braces resource caps for a Pi under 40 users.
+    # Uncomment if you want hard ceilings (compose v2 honours these in swarm;
+    # on plain `docker compose` use `docker run --memory`/--cpus equivalents).
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: "2.0"
+    #       memory: 256M
+
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8080/health',timeout=3).read()==b'ok' else 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

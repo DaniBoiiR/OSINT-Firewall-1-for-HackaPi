@@ -1,0 +1,15 @@
+# Keep the build context tiny and the toolchain out of the image.
+node_modules
+package.json
+package-lock.json
+tailwind/
+.env
+.env.example
+__pycache__/
+*.pyc
+.git
+.gitignore
+*.md
+ORGANIZER_FLAGS.md
+NPC_BRIEFING_Aya_Nocari.md
+TECH_LEAD_HANDOFF.md
